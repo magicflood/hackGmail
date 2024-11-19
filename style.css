@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+}
+
+#dataForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#email {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 10px;
+    background-color: #212121;
+    padding-left: 30px;
+    color: white;
+    font-family: "Geist Mono";
+}
+
+#password {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 10px;
+    background-color: #212121;
+    padding-left: 30px;
+    color: white;
+    font-family: "Geist Mono";
+}
+
+.btn {
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: rgb(29, 142, 255);
+    font-family: "Geist Mono";
+    color: white;
+    font-weight: 700;
+    transition-duration: 200ms;
+}
+
+.btn:hover {
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.emText {
+    font-family: "Geist Mono";
+    color: white;
+    font-weight: 700;
+}
+
+.emPass {
+    font-family: "Geist Mono";
+    color: white;
+    font-weight: 700;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin-inline: auto;
+    transition-duration: 200ms;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.flexImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.title {
+    color: white;
+    font-family: "Geist Mono";
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}

